@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Sandesh Devaraju</title>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	
+
+	<style>
+	body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-family: "Open Sans";
+  font-size: 0.6em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+ 
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:4em;
+  width:4em;
+  
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pic:hover {
+  /*Webkit fix*/
+  -webkit-transform: translateZ(0);
+  
+  cursor:pointer;
+  
+  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+  
+  margin:0;
+  
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.55em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  
+  background-color:white;
+  width:60%;
+  
+  padding:0.5em 0 0.5em 0;
+  
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+  border-radius:3px;
+}
+
+@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+
+	</style>
+
+	<style media="print">
+	
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:33%;
+  color:black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}
+	</style>
+	
+	</head>
+	<body>
+	
+
+		<div class="resume-wrapper">
+		  <article class="paper">
+			    <header>
+			      <div class="header-content">
+			        <div class="header-text">
+			          <p>
+			            Sandesh Devaraju
+			          </p>
+			          <p class="subtitle">Programmer</p>
+			        </div>
+			      </div>
+			    </header>
+			    <div class="content-wrapper">
+			    
+			      <!-- CONTACT -->
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           Contact
+			          </div>
+			          <div class="content-text">
+				            <ul>
+				              <li>Website</li>
+				              <li> http://scouredimage.com</li>
+				            </ul>
+
+				            <ul>
+				              <li>Email</li>
+				              <li><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="87f4e6e9e3e2f4efa9e3e2f1e6f5e6edf2c7e0eae6eeeba9e4e8ea">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></li>
+				            </ul>
+
+				            <ul>
+				              <li>Phone</li>
+				              <li>(631) 902 6228</li>
+				            </ul>
+			          </div>
+			        </div>
+			      </section>
+
+			      <!-- LOCATION -->
+					      <section class="content">
+					        <div class="row">
+					          <div class="content-cat">
+					           Location
+					          </div>
+					          <div class="content-text">
+
+						            <ul>
+						              <li>Address</li>
+						              <li>528 Bergen Street #2C</li>
+						            </ul>
+
+							            <ul>
+							              <li>Postal Code & City</li>
+							              <li>NY 11217 Brooklyn</li>
+							            </ul>
+
+						            <ul>
+						              <li>Region</li>
+						              <li>New York</li>
+						            </ul>
+
+					          </div>
+					        </div>
+					      </section>
+
+						
+						<!-- LANGUAGE -->
+
+			      <!-- PROFILES -->
+				      <section class="content profiles">
+				        <div class="row">
+				          <div class="content-cat">
+				           Profiles
+				          </div>
+				          <div class="content-text profiles-listing">
+				            <ul>
+					              	<li>
+					              	<a href="http://github.com/scouredimage" target="_blank">
+							                	Github
+							                </a>
+							            </li>
+					              	<li>
+					              	<a href="http://twitter.com/scouredimage" target="_blank">
+							                	Twitter
+							                </a>
+							            </li>
+				            </ul>
+				          </div>
+				        </div>
+				      </section>
+
+								<section class="content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+											Work	Experience
+			          
+			            		<p>Jan 2012 till Present</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p style="margin-top:2.4em;">
+													<strong>Sr Sotware Engineer, Optimization Team</strong> at <strong><a href="http://appnexus.com">AppNexus:</a></strong>
+					            </p>
+
+											<p>In the context of real-time advertising, Optimization aims to help make smart bid decisions. Worked on a wide array of Optimization problems including Bid Valuation, Budgeting, and Discovery.</p>
+
+												<p class="highlight">Designed and built a streaming architecture (Kafka, Spark, Netty) to dynamically set floor prices at auction-time guaranteeing optimal Publisher RPM</p>
+												<p class="highlight">Support transacting on ad viewability, based on an extensible architecture supporting multiple prediction models (Hive, PySpark)</p>
+												<p class="highlight"> A Python implementation of a distributed task queue supporting sharding, aggregation, and dependencies (RabbitMQ, Tornado)</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Apr 2009 till Dec 2011</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+													<strong>Software Engineer</strong> at <strong><a href="https://www.crunchbase.com/organization/kikin#/entity">kikin:</a></strong>
+					            </p>
+
+											<p>kikin aimed to bring contextual search into mobile devices via operating system-level integration</p>
+
+												<p class="highlight">Developed scalable search infrastructure for indexing social media streams (1.5M monthly actives)</p>
+												<p class="highlight">Built an analytics solution for large scale processing and analysis of log data (30GB daily)</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Sep 2008 till Mar 2009</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+													<strong>Engineer</strong> at <strong><a href="http://highergear.com/">The Higher Gear Group:</a></strong>
+					            </p>
+
+											<p>CRM tailored to the needs of auto dealerships</p>
+
+												<p class="highlight">Developed a packaging mechanism for composing software distributions based on CentOS</p>
+												<p class="highlight">Architected a distributed release management and build monitoring tool for continuous integration</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Jun 2007 till Jun 2008</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+													<strong>Engineer</strong> at <strong><a href="https://www.crunchbase.com/organization/monitor110#/entity">Monitor110:</a></strong>
+					            </p>
+
+											<p>Social media intelligence tool catering to institutional investors</p>
+
+												<p class="highlight">Implemented user-defined persistent searches backed by a distributed, fault-tolerant RESTful service</p>
+												<p class="highlight">Implemented a topic clustering algorithm based on semantic similarity</p>
+												<p class="highlight">Formulated a search query DSL supporting boolean, wildcard and grouping operations</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Jan 2006 till May 2007</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+													<strong>Research Assistant</strong> at <strong><a href="http://www.cs.sunysb.edu">Algorithms Laboratory, Stony Brook:</a></strong>
+					            </p>
+
+											<p>Worked with  Prof. Steven Skiena on various natural language processing problems</p>
+
+												<p class="highlight">Built a SVM based Named Entity Recognizer</p>
+												<p class="highlight">Devised an algorithm to identify and plot temporal interaction graphs of interesting named entities</p>
+												<p class="highlight">Formulated a mechanism for merging temporal databases with bounded sizing</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+
+					
+
+								<section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				            	Education
+
+				            		<p>Sep 2005 till May 2007</p>
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+						            <p class="heading" style="margin-top:2.35em;">State University of New York at Stony Brook</p>
+
+				            		<p class="highlight">
+													Masters:
+				            		<i>  (Computer Science)</i>
+				            		</p>
+
+				          </div>
+				        </div>
+				      </section>
+
+
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			            Skills
+			          </div>
+			          <div class="content-text skills-listing">
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Web development:
+
+											</strong>
+			            	</span>
+
+
+												Python, Java, Javascript, Scala
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Analysis:
+
+											</strong>
+			            	</span>
+
+
+												Pandas, NumpPy, SciPy, Spark
+			            	</p>
+			          </div>
+			        </div>
+			      </section>
+
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			            Interests
+			          </div>
+			          <div class="content-text skills-listing">
+			            	<p>
+			            	<span class="name">
+			            	</span>
+												Long distance running, Cycling, Leather working
+			            	</p>
+			          </div>
+			        </div>
+			      </section>
+
+		    </div>
+		      
+		  </article>
+		  
+		</div>
+	</body>
+</html>
