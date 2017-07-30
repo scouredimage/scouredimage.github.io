@@ -1,0 +1,155 @@
+{
+  "basics": {
+    "name": "Sandesh Devaraju",
+    "label": "Programmer",
+    "picture": "",
+    "email": "sandesh.devaraju@gmail.com",
+    "phone": "(631) 902 6228",
+    "website": "http://scouredimage.com",
+    "summary": "",
+    "location": {
+      "address": "734 Nostrand Ave #2",
+      "postalCode": "NY 11216",
+      "city": "Brooklyn",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "scouredimage",
+        "url": "https://github.com/scouredimage"
+      },
+      {
+        "network": "Twitter",
+        "username": "scouredimage",
+        "url": "https://twitter.com/scouredimage"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Orchard Platform",
+      "position": "Senior Software Engineer",
+      "website": "https://orchardplatform.com",
+      "startDate": "Apr 2016",
+      "endDate": "",
+      "summary": "Orchard Platform is the leading provider of data, technology, and software to the online lending industry.",
+      "highlights": [
+        "A composable system (Scala, Postgres) to track performance of the online lending marketplace capable of supporting multiple indexes segmented by dimensions and filters. One such index tracking the performance of direct-to-consumer lending is being made available to the public at https://orchardindexes.com/",
+        "Secondary marketplace for buying and selling pools of loans supporting multiple deal types: auctions and forward-flow agreements (Scala, Postgres)"
+      ]
+    },
+    {
+      "company": "AppNexus",
+      "position": "Senior Software Engineer, Optimization Team",
+      "website": "https://www.appnexus.com/",
+      "startDate": "Jan 2012",
+      "endDate": "Apr 2016",
+      "summary": "In the context of real-time advertising, Optimization aims to help make smart bid decisions. Worked on a wide array of Optimization problems including Bid Valuation, Budgeting, and Discovery.",
+      "highlights": [
+        "Designed and built a streaming architecture (Kafka, Spark, Netty) to dynamically set floor prices at auction-time guaranteeing optimal Publisher RPM",
+        "Support transacting on ad viewability, based on an extensible architecture supporting multiple prediction models (Hive, PySpark)",
+        "Python implementation of a distributed task queue supporting sharding, aggregation, and dependencies (RabbitMQ, Tornado)"
+      ]
+    },
+    {
+      "company": "kikin",
+      "position": "Software Engineer",
+      "website": "https://www.crunchbase.com/organization/kikin#/entity",
+      "startDate": "Apr 2009",
+      "endDate": "Dec 2011",
+      "summary": "kikin aimed to bring contextual search into mobile devices via operating system-level integration",
+      "highlights": [
+        "Developed scalable search infrastructure for indexing social media streams (1.5M monthly actives)",
+        "Built an analytics solution for large scale processing and analysis of log data (30GB daily)"
+      ]
+    },
+    {
+      "company": "The Higher Gear Group",
+      "position": "Engineer",
+      "website": "http://highergear.com/",
+      "startDate": "Sep 2008",
+      "endDate": "Mar 2009",
+      "summary": "CRM tailored to the needs of auto dealerships",
+      "highlights": [
+        "Developed a packaging mechanism for composing software distributions based on CentOS",
+        "Architected a distributed release management and build monitoring tool for continuous integration"
+      ]
+    },
+    {
+      "company": "Monitor110",
+      "position": "Software Engineer",
+      "website": "https://www.crunchbase.com/organization/monitor110#/entity",
+      "startDate": "Jun 2007",
+      "endDate": "Jun 2008",
+      "summary": "Social media intelligence tool catering to institutional investors",
+      "highlights": [
+        "Developed a system for user-defined persistent searches backed by a distributed, fault-tolerant RESTful service",
+        "Designed a scalable topic clustering algorithm based on semantic similarity",
+        "Formulated a search query DSL supporting boolean, wildcard and grouping operations"
+      ]
+    },
+    {
+      "company": "Algorithms Laboratory, Stony Brook",
+      "position": "Research Assistant",
+      "website": "http://www.cs.sunysb.edu/",
+      "startDate": "Jan 2006",
+      "endDate": "May 2007",
+      "summary": "Worked with Prof. Steven Skiena on various natural language processing problems",
+      "highlights": [
+        "Built a SVM based Named Entity Recognizer",
+        "Devised an algorithm to identify and plot temporal interaction graphs of interesting named entities",
+        "Formulated a mechanism for merging temporal databases with bounded sizing"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "State University of New York at Stony Brook",
+      "area": "Computer Science",
+      "studyType": "Masters",
+      "startDate": "Sep 2005",
+      "endDate": "May 2007",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": [
+        "Scala",
+        "Python",
+        "Java",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Analysis",
+      "level": "",
+      "keywords": [
+        "Spark",
+        "Pandas",
+        "NumPy",
+        "SciPy"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [
+    {
+      "name": "",
+      "keywords": [
+        "Long distance running",
+        "Cycling",
+        "Leather working"
+      ]
+    }
+  ],
+  "references": []
+}
