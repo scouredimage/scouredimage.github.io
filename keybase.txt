@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/scouredimage
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://scouredimage.com
+  * I am scouredimage (https://keybase.io/scouredimage) on keybase.
+  * I have a public key ASCi-JF6XrCJ7NDIxqq7Vk1JhdCfYUi2jj73FJ0fgKe8EAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a2f8917a5eb089ecd0c8c6aabb564d4985d09f6148b68e3ef7149d1f80a7bc100a",
+      "host": "keybase.io",
+      "kid": "0120a2f8917a5eb089ecd0c8c6aabb564d4985d09f6148b68e3ef7149d1f80a7bc100a",
+      "uid": "d5ab695ddeb49f98a46a1f7c67206e19",
+      "username": "scouredimage"
+    },
+    "merkle_root": {
+      "ctime": 1523560332,
+      "hash": "aacf2100d4357e065f64e4d3bccb50955b8fea459340006cefaec428fd9016373967c282723b5e45ab2f31d93a15bb418aeda5edfa3e6517996a6bbe3d4ed86a",
+      "hash_meta": "b33684909f47f812f69f3a516e270712e345da6453abd08e44d330ebea68c3de",
+      "seqno": 2381574
+    },
+    "service": {
+      "entropy": "DgyRRoDC23sG6vn/PVtsWLDT",
+      "hostname": "scouredimage.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1523560385,
+  "expire_in": 504576000,
+  "prev": "8783f631b1b5aa597325bc82a994f18856e1af9d539c61f8d514d5ad0e6f8cb8",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgoviRel6wiezQyMaqu1ZNSYXQn2FIto4+9xSdH4CnvBAKp3BheWxvYWTESpcCBcQgh4P2MbG1qllzJbyCqZTxiFbhr51TnGH41RTVrQ5vjLjEIDGfihRfhycINBCqAQ8tCBsmRUzuMc7aOz5oHaDUDYisAgHCo3NpZ8RAbM7fKgZG73/l/mcv+XX6+PgXEuecbRksyzeBeUlQIlTc1tV5eB9PBBFWDGBKFbrZn9r0M9F/sxnj28qJHhzpDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIACHIeuwkaLjI0Zu4vXYf7ehWI8uXsUQniVP9DfDbx6Co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/scouredimage
+
+==================================================================
