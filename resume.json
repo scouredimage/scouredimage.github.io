@@ -1,117 +1,134 @@
 {
+  "meta": {
+    "theme": "paper"
+  },
   "basics": {
     "name": "Sandesh Devaraju",
     "label": "Programmer",
     "picture": "",
     "email": "sandesh.devaraju@gmail.com",
     "phone": "(631) 902 6228",
-    "website": "http://scouredimage.com",
+    "website": "https://scouredimage.com",
     "summary": "",
     "location": {
-      "address": "734 Nostrand Ave #2",
-      "postalCode": "NY 11216",
-      "city": "Brooklyn",
-      "countryCode": "US",
-      "region": "New York"
+      "address": "152 S Ave 57",
+      "postalCode": "CA 90042",
+      "city": "Los Angeles",
+      "countryCode": "US"
     },
     "profiles": [
       {
         "network": "Github",
         "username": "scouredimage",
         "url": "https://github.com/scouredimage"
-      },
-      {
-        "network": "Twitter",
-        "username": "scouredimage",
-        "url": "https://twitter.com/scouredimage"
       }
     ]
   },
   "work": [
     {
-      "company": "Orchard Platform",
+      "company": "Serverless",
       "position": "Senior Software Engineer",
-      "website": "https://orchardplatform.com",
-      "startDate": "Apr 2016",
-      "endDate": "",
-      "summary": "Orchard Platform is the leading provider of data, technology, and software to the online lending industry.",
+      "website": "https://www.serverless.com/pro",
+      "startDate": "2019-02-28",
+      "summary": "Zero-friction development tools offered as a commercial service complementing the popular namesake open-source framework.",
       "highlights": [
-        "A composable system (Scala, Postgres) to track performance of the online lending marketplace capable of supporting multiple indexes segmented by dimensions and filters. One such index tracking the performance of direct-to-consumer lending is being made available to the public at https://orchardindexes.com/",
-        "Secondary marketplace for buying and selling pools of loans supporting multiple deal types: auctions and forward-flow agreements (Scala, Postgres)"
+        "Multi-tenant indexing pipeline ingesting ~1TB of high-dimensional data each day. Supports near real-time application troubleshooting, metrics, and alerting.",
+        "CI/CD custom-built for serverless applications featuring preview deployments. Utilized in production by hundreds of organizations performing thousands of deployments each day.",
+        "Low latency HTTP/WebSocket event bus implementation supporting batching, querying and webhook delivery capabilities. "
       ]
     },
     {
-      "company": "AppNexus",
-      "position": "Senior Software Engineer, Optimization Team",
-      "website": "https://www.appnexus.com/",
-      "startDate": "Jan 2012",
-      "endDate": "Apr 2016",
-      "summary": "In the context of real-time advertising, Optimization aims to help make smart bid decisions. Worked on a wide array of Optimization problems including Bid Valuation, Budgeting, and Discovery.",
+      "company": "Juvo",
+      "position": "Senior Software Engineer",
+      "website": "https://www.juvo.com/",
+      "startDate": "2018-01-29",
+      "endDate": "2018-07-20",
+      "summary": "Leveraging everyday mobile transactions to open financial opportunities to the world’s underbanked population.",
       "highlights": [
-        "Designed and built a streaming architecture (Kafka, Spark, Netty) to dynamically set floor prices at auction-time guaranteeing optimal Publisher RPM",
-        "Support transacting on ad viewability, based on an extensible architecture supporting multiple prediction models (Hive, PySpark)",
-        "Python implementation of a distributed task queue supporting sharding, aggregation, and dependencies (RabbitMQ, Tornado)"
+        "Data ETL with Airflow, Spark, and Kubernetes."
       ]
     },
     {
-      "company": "kikin",
+      "company": "Orchard Platform (acquired by Kabbage)",
+      "position": "Senior Software Engineer",
+      "website": "https://newsroom.kabbage.com/news/company/kabbage-to-acquire-orchard-to-enhance-data-science-platform/",
+      "startDate": "2016-04-27",
+      "endDate": "2018-01-12",
+      "summary": "Providing analytical data, technology, and software to the online lending industry.",
+      "highlights": [
+        "Composable system for defining indexes tracking performance of the online lending marketplace segmented by various dimensions and filters. One such index tracking performance of direct-to-consumer lending was made available via Bloomberg (quote ORCHLEND:IND).",
+        "Secondary marketplace for buying and selling pools of loans supporting multiple deal types: auctions and forward-flow agreements."
+      ]
+    },
+    {
+      "company": "AppNexus (acquired by AT&T)",
+      "position": "Senior Software Engineer",
+      "website": "https://about.att.com/story/att_to_acquire_appnexus.html",
+      "startDate": "2012-01-16",
+      "endDate": "2016-04-15",
+      "summary": "Empowering data driven real-time online advertising bidding decisions including valuation, budgeting, and discovery.",
+      "highlights": [
+        "Novel system for dynamically adjusting reserve price at auction-time guaranteeing optimal publisher revenue. Streaming architecture backing an online machine learning algorithm provided service latency of 20ms and a model feedback loop of 30s (99th percentile).",
+        "Prediction engine evaluating the probability of a given advertisement placement being viewed. Supports an elastic feature set and scaled to millions of placements.",
+        "Distributed task queue supporting sharding, aggregation, and dependencies. Running hundreds of jobs in production daily."
+      ]
+    },
+    {
+      "company": "Kikin",
       "position": "Software Engineer",
-      "website": "https://www.crunchbase.com/organization/kikin#/entity",
-      "startDate": "Apr 2009",
-      "endDate": "Dec 2011",
-      "summary": "kikin aimed to bring contextual search into mobile devices via operating system-level integration",
+      "startDate": "2009-04-06",
+      "endDate": "2011-12-16",
+      "summary": "Kikin aimed to bring contextual search to mobile devices. The IP was eventually acquired by Baidu Inc.",
       "highlights": [
-        "Developed scalable search infrastructure for indexing social media streams (1.5M monthly actives)",
-        "Built an analytics solution for large scale processing and analysis of log data (30GB daily)"
+        "Scalable search infrastructure for indexing social media streams scaling up to millions of MAUs.",
+        "Analytics solution for large scale processing and analysis of log data."
       ]
     },
     {
-      "company": "The Higher Gear Group",
+      "company": "The Higher Gear Group (now Affinitiv)",
       "position": "Engineer",
       "website": "http://highergear.com/",
-      "startDate": "Sep 2008",
-      "endDate": "Mar 2009",
-      "summary": "CRM tailored to the needs of auto dealerships",
+      "startDate": "2008-09-02",
+      "endDate": "2009-03-20",
+      "summary": "CRM tailored to needs of the automobile retail industry.",
       "highlights": [
-        "Developed a packaging mechanism for composing software distributions based on CentOS",
-        "Architected a distributed release management and build monitoring tool for continuous integration"
+        "Packaging mechanism for programmatically composing software distributions."
       ]
     },
     {
       "company": "Monitor110",
       "position": "Software Engineer",
-      "website": "https://www.crunchbase.com/organization/monitor110#/entity",
-      "startDate": "Jun 2007",
-      "endDate": "Jun 2008",
-      "summary": "Social media intelligence tool catering to institutional investors",
+      "startDate": "2007-06-11",
+      "endDate": "2008-06-27",
+      "summary": "Social media intelligence tool catering to institutional investors.",
       "highlights": [
-        "Developed a system for user-defined persistent searches backed by a distributed, fault-tolerant RESTful service",
-        "Designed a scalable topic clustering algorithm based on semantic similarity",
-        "Formulated a search query DSL supporting boolean, wildcard and grouping operations"
+        "A system for user-defined persistent searches backed by a distributed service.",
+        "Scalable topic clustering algorithm based on semantic similarity.",
+        "Custom search query DSL supporting boolean, wildcard and grouping operations. "
       ]
     },
     {
-      "company": "Algorithms Laboratory, Stony Brook",
+      "company": "Algorithms Laboratory, Stony Brook University",
       "position": "Research Assistant",
       "website": "http://www.cs.sunysb.edu/",
-      "startDate": "Jan 2006",
-      "endDate": "May 2007",
-      "summary": "Worked with Prof. Steven Skiena on various natural language processing problems",
+      "startDate": "2006-01-01",
+      "endDate": "2007-05-31",
+      "summary": "Worked under the supervision of Prof. Steven Skiena on various natural language processing problems",
       "highlights": [
-        "Built a SVM based Named Entity Recognizer",
-        "Devised an algorithm to identify and plot temporal interaction graphs of interesting named entities",
-        "Formulated a mechanism for merging temporal databases with bounded sizing"
+        "SVM based Named Entity Recognizer",
+        "Algorithm to identify and plot temporal interaction graphs of correlated named entities",
+        "A mechanism for merging temporal databases with bounded sizing"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "State University of New York at Stony Brook",
+      "institution": "Stony Brook University",
       "area": "Computer Science",
-      "studyType": "Masters",
-      "startDate": "Sep 2005",
-      "endDate": "May 2007",
+      "studyType": "Master of Science",
+      "startDate": "2005-09-01",
+      "endDate": "2007-05-31",
       "gpa": "",
       "courses": []
     }
@@ -120,13 +137,14 @@
   "publications": [],
   "skills": [
     {
-      "name": "Programming",
+      "name": "Programming Languages",
       "level": "",
       "keywords": [
-        "Scala",
+        "Go",
+        "Javascript",
         "Python",
-        "Java",
-        "Javascript"
+        "Scala",
+        "Java"
       ]
     },
     {
@@ -137,6 +155,18 @@
         "Pandas",
         "NumPy",
         "SciPy"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "AWS",
+        "Elasticsearch",
+        "Docker",
+        "Kubernetes",
+        "Kafka",
+        "Postgres"
       ]
     }
   ],
