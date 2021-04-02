@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------------
 
-\documentclass[9pt,twoside,letterpaper,hidelinks]{article}
+\documentclass[8pt,twoside,letterpaper,hidelinks]{article}
 
 \usepackage{extsizes}
 \usepackage{latexsym}
@@ -14,11 +14,12 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 \usepackage{fontawesome}
-\usepackage{ragged2e}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -27,12 +28,9 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.5in}
-
-\urlstyle{same}
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.2in}
 
 \raggedbottom
 \raggedright
@@ -45,130 +43,89 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
-  \item{
-    {#1}{: #2 }
-  }
+
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcommand{\resumeSubheadingStart}[4]{
+	\begin{tabularx}{\linewidth}{>{\arraybackslash}p{.7\linewidth}R}
+		\textbf{#1} at \textbf{#2} & \textsc{\small#3}\\
+		\multicolumn{2}{>{\arraybackslash}p{\linewidth}}{#4}\\
+	\end{tabularx}
 }
 
-\newcommand{\resumeSubheading}[4]{
-        \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-    \begin{tabularx}{\textwidth}{XR}
-      \textbf{#3} at \textbf{#1} & \textit{\small #4}
-    \end{tabularx}
+\definecolor{black}{cmyk}{255,255,255,255}
+\newcommand{\LinedItem}[1]{
+	\begin{tabular}[t]{!{\color{black!20}\vrule}p{5pt}p{\textwidth}}
+		& #1\\
+	\end{tabular}
 }
 
-\renewcommand{\labelitemi}{\textperiodcentered}
-
-\newcommand{\resumeItemListStart}{
-  \begin{itemize}[noitemsep,topsep=0pt]
-}
-\newcommand{\resumeItemListEnd}{
-  \end{itemize}
-}
-
+\setlength\extrarowheight{1pt}
+\titlespacing\section{0pt}{4pt}{4pt}
 \begin{document}
+\begin{center}
+ {\huge \textbf{Sandesh Devaraju}}
+\end{center}
 
 %----------CONTACT-----------------
 \begin{tabularx}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Sandesh Devaraju}  & \faInbox{} \href{mailto:sandesh.devaraju@gmail.com}{sandesh.devaraju@gmail.com} \\
-    \faMapMarker{} 152 S Ave 57 & \faLink{} \href{https://scouredimage.com/}{https://scouredimage.com} \\
-    \hspace{7pt} Los Angeles, CA 90042 & \faPhone{} +1-631-902-6228 \\
+  \faLink{} \href{https://scouredimage.com}{\textit{https://scouredimage.com/}} & \faInbox{} \href{mailto:sandesh.devaraju@gmail.com}{sandesh.devaraju@gmail.com} \\
+    \faMapMarker{} 152 S Ave 57,  Los Angeles, CA 90042 & \faPhone{} +1-631-902-6228 \\
 \end{tabularx}
 
 %-----------SUMMARY-----------------
 \section{Summary}
 \begin{minipage}{\textwidth}
-Seasoned functional programmer with over 14 years of industry experience. Proven track record of producing sound technical designs and leading projects to deliver robust scalable software. Strong analytical skills with an ability to thrive in fast-paced collaborative environments. 
+Seasoned programmer with a proven track record of producing sound technical designs and leading projects to deliver robust scalable software. Strong analytical skills with an ability to thrive in fast-paced collaborative environments. 
 \end{minipage} 
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Work Experience}
 
-    \resumeSubheading
-      {\href{https://www.serverless.com/pro}{Serverless}}{San Francisco, CA} {Senior Software Engineer}{Feb 2019 - Today}
-      \begin{itemize}[noitemsep,topsep=0pt,leftmargin=7pt]
-        \justifying
-        \item{Multi-tenant indexing pipeline ingesting {\raise.17ex\hbox{$\scriptstyle\sim$}}1TB of high-dimensional data each day. Supports near real-time application troubleshooting, metrics, and alerting.}
-        \item{CI/CD custom-built for serverless applications featuring preview deployments. Utilized in production by hundreds of organizations performing thousands of deployments each day.}
-        \item{Low latency HTTP+WebSocket event bus implementation supporting batching, querying and webhook delivery capabilities.}
-      \end{itemize}
- 
-    \resumeSubheading
-      {Orchard Platform (\href{https://newsroom.kabbage.com/news/company/kabbage-to-acquire-orchard-to-enhance-data-science-platform/}{acquired by Kabbage)}}{New York, NY} {Senior Software Engineer}{Apr 2016 - Jan 2018}
-      \resumeItemListStart
-        \resumeItem{Orchard Indexes}
-          {A composable system tracking performance of the online lending marketplace.  Supports multiple indexes and segmenting by various dimensions and filters.  One such index tracking the performance of direct-to-consumer lending was made available via Bloomberg (quote \texttt{ORCHLEND:IND}).}
-        \resumeItem{Orchard Marketplace}
-          {A secondary marketplace facilitating buying/selling pools of loans. Supports multiple deal types including auctions and direct deals.}
-      \resumeItemListEnd
+\resumeSubheadingStart{Senior Software Engineer}{\href{https://www.serverless.com/pro}{Serverless}}{Feb 2019 - Today}{Building zero-friction development tooling offered as a commercial service complementing the popular open-source framework (with over 39K stars on Github).}
+	\LinedItem{Multi-tenant indexing pipeline ingesting over a terabyte of high-dimensional data each day. Relied on by thousands of developers for near real-time application troubleshooting, metrics, and alerting.}
+	\LinedItem {CI/CD service optimized for serverless applications and workflows. Being utilized in production by hundreds of organizations performing thousands of deployments each day.}
+	\LinedItem{Low latency HTTP+WebSocket event bus implementation supporting batching, querying and webhook delivery capabilities.}
+        
+\resumeSubheadingStart{Senior Software Engineer}{\href{https://www.juvo.com}{Juvo}}{Jan 2018 - July 2018}{Developing data pipelines analyzing mobile transactions in order to provide financial identity and credit opportunities to the underbanked.}
+	\LinedItem{Data ETL with Airflow, Spark, and Kubernetes.}
+        
+\resumeSubheadingStart{Senior Software Engineer}{\href{https://newsroom.kabbage.com/news/company/kabbage-to-acquire-orchard-to-enhance-data-science-platform/}{Orchard Platform (acquired by Kabbage/AMEX)}}{Apr 2016 - Jan 2018}{Developing systems for providing analytical data, technology, and software licensed for use by loan providers.}
+        \LinedItem{Composable system for defining indexes tracking performance of the online lending marketplace segmented by various dimensions and filters.  One such index tracking performance of direct-to-consumer lending was made available via Bloomberg (quote \texttt{ORCHLEND:IND}).}
+        \LinedItem{Secondary marketplace for buying and selling pools of loans supporting multiple deal types: auctions and forward-flow agreements.}
+        
+\resumeSubheadingStart{Senior Software Engineer}{\href{https://about.att.com/story/att_to_acquire_appnexus.html}{AppNexus (acquired by AT\&T)}}{Jan 2012 - Mar 2016}{Building scalable systems to empower data-driven advertising bidding decisions including valuation, budgeting, and discovery.}
+	\LinedItem{{\href{https://patents.google.com/patent/US20160275570A1/en}{Novel}} system for dynamically adjusting reserve price at auction-time guaranteeing optimal publisher revenue. Streaming architecture backing an online machine learning algorithm provided service latency of 20ms and a model feedback loop of 30s (99th percentile).}
+	\LinedItem{Scalable prediction engine powering advertiser buying of placements based on the \href{https://wiki.xandr.com/display/industry/Introduction+to+Viewability}{probability of being viewed by a human}.}
+	\LinedItem{Distributed task queue for processing analytical batch jobs running hundreds of jobs in production daily.}
 
-    \resumeSubheading
-      {AppNexus (\href{https://about.att.com/story/att_to_acquire_appnexus.html}{acquired by AT\&T)}}{New York, NY} {Senior Software Engineer}{Jan 2012 - Mar 2016}
-      \resumeItemListStart
-        \item{A {\href{https://patents.google.com/patent/US20160275570A1/en}{novel system}} that dynamically adjusts reserve price at auction-time guaranteeing optimal advertiser revenue. Streaming architecture backing an online machine learning algorithm facilitates service latency of 20ms and a model feedback loop of 30s (99th percentile).}
-        \resumeItem{\href{https://wiki.xandr.com/display/industry/Introduction+to+Viewability}{Viewable Transactions}}
-          {Prediction engine that determines the probability of a given advertisement placement being viewed by a human. Supports an elastic feature set and scaled to millions of placements.}
-        \resumeItem{Work Queue}
-          {Python implementation of a distributed task queue supporting sharding, aggregation, task dependencies, and reporting. Running hundreds of jobs in production daily.}
-          \resumeItemListEnd
+\resumeSubheadingStart{Software Engineer}{Kikin}{Apr 2009 - Dec 2011}{Bringing contextual search to mobile devices.}
+	\LinedItem{Scalable search infrastructure for indexing social media streams scaling up to millions of MAUs.}
+	\LinedItem{Data pipelines for large scale processing and analysis of log data.}
 
-    \resumeSubheading
-      {kikin}{New York, NY}{Software Engineer}{Apr 2009 - Dec 2011}
-      \resumeItemListStart
-        \resumeItem{Social Search}
-          {Scalable search infrastructure for per-user sandboxed social media streams scaling up to millions of MAUs.}
-        \resumeItem{Analytics pipeline}
-          {Hadoop-backed data pipeline for processing and analysis of application log data.}
-      \resumeItemListEnd
+\resumeSubheadingStart{Engineer}{\href{http://highergear.com}{The Higher Gear Group (now Affinitiv)}}{Sep 2008 - Mar 2009}{Building a CRM product tailored to needs of the automobile retail industry.}
+	\LinedItem{Packaging mechanism for programmatically composing software distributions.}
 
-    \resumeSubheading
-      {\href{http://highergear.com}{The Higher Gear Group (now Affinitiv)}}{New York, NY}{Engineer}{Sep 2008 - Mar 2009}
-      \resumeItemListStart
-        \resumeItem{Packager}
-          {A packaging mechanism for programmatically composing software distributions.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Monitor110}{New York, NY}{Software Engineer}{Jun 2007 - Jun 2008}
-      \resumeItemListStart
-        \resumeItem{Search}
-          {Developed a system for user-defined persistent searches backed by a distributed RESTful service.}
-        \resumeItem{Clustering}
-          {Designed a scalable topic clustering algorithm based on semantic similarity.}
-        \resumeItem{Search}
-          {Formulated a custom search query DSL supporting boolean, wildcard and grouping operations.}
-      \resumeItemListEnd
+\resumeSubheadingStart{Software Engineer}{Monitor110}{Jun 2007 - Jun 2008}{Developing systems for analyzing social media enabling institutional investors with actionable insights.}
+	\LinedItem{A system for user-defined persistent searches backed by a distributed service.}
+	\LinedItem{Scalable topic clustering algorithm based on semantic similarity.}
+	\LinedItem{Custom search query DSL supporting boolean, wildcard and grouping operations.}
+	
+\resumeSubheadingStart{Research Assistant}{{\href{https://www.cs.stonybrook.edu/research}{Data Science Lab, Stony Brook University}}}{Jun 2007 - Jun 2008}{Worked under the supervision of Prof. Steven Skiena on various natural language processing problems.}
 
 %-----------EDUCATION-----------------
 \section{Education}
-\resumeSubHeadingListStart
-\item {
-   \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-    \begin{tabularx}{0.97\textwidth}{XR}
-      \textbf{Master of Science in Computer Science} & \textit{\small Sep 2005 - May 2007} \\
+    \begin{tabularx}{\textwidth}{XR}
+      \textbf{Master of Science in Computer Science} & \textsc{\small Sep 2005 - May 2007} \\
       State University of New York & Stony Brook, NY  \\
     \end{tabularx}
-}
-\begin{minipage}{\textwidth}
-\vspace{0.25em}
-Research Assistant, Algorithms Laboratory
-\end{minipage}
-\resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: Go, JavaScript, Scala, Java, Python, SQL }
-         }
-    \item {
-      \textbf{Analysis}{: Spark, Pandas, NumPy, SciPy}
-    }
-    \item {
-      \textbf{Tools}{: AWS, ElasticSearch, Docker, Kubernetes, Kafka, Postgres }
-    }
-  \resumeSubHeadingListEnd
+	\begin{tabularx}{\textwidth}{l@{\hskip 5pt}l}
+		\textbf{Languages} & {Go, JavaScript, Scala, Java, Python, SQL.}\\
+		\textbf{Analysis} & {Spark, Pandas, NumPy, SciPy.}\\
+		\textbf{Tools} & {AWS, ElasticSearch, Docker, Kubernetes, Kafka, Postgres.}\\
+	\end{tabularx}
 
 %-------------------------------------------
 \end{document}
